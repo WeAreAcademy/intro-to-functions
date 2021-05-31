@@ -1,0 +1,23 @@
+function:
+=========
+name: min
+
+parameter a: number
+
+parameter b: number
+
+return: number
+
+pseudo code:
+============
+if a is smaller than b
+	return a
+else
+	return b
+
+test cases:
+===========
+min(3, 5) should be 3
+min(5, 3) should be 3
+min(-5, 3) should be -5
+min(-5, -55) should be -55
