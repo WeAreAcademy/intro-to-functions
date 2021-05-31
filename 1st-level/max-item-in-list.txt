@@ -1,0 +1,24 @@
+function:
+=========
+name: maxInList
+
+parameter: numbers: list of numbers
+
+return type: number
+
+pseudo code:
+============
+set biggest to first number in list
+for each number n in list
+	if n is greater than biggest
+		set biggest to n
+return biggest
+
+test cases:
+===========
+maxInList([2, 9, 1]) should be 9
+maxInList([2, 9, 10]) should be 10
+maxInList([-2, -9, -10]) should be -2
+maxInList([50, 50]) should be 50
+maxInList([51, 50]) should be 51
+maxInList([51, 50, 50, 50, 50, 50000]) should be 50000
