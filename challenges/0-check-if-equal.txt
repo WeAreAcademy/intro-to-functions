@@ -1,5 +1,7 @@
 Write a function that, given two numbers, returns a boolean representing whether or not the two numbers are equal.
 
+You may assume that the numbers are always integers (i.e. whole numbers).
+
 function:
 =========
 name: isEqual
@@ -19,4 +21,8 @@ else
 
 test cases:
 ===========
-(add some test cases yourself here!)
+isEqual(4, 4) should be True
+isEqual(0, 0) should be True
+isEqual(-4, -4) should be True
+isEqual(4, -4) should be False
+isEqual(0, 1) should be False
