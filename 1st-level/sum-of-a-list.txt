@@ -1,3 +1,5 @@
+Write a function that, given a list of numbers, returns the total (i.e. the result of adding up all the numbers in the list).
+
 function:
 =========
 name: sumList

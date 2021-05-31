@@ -1,3 +1,5 @@
+Write a function that, given a list of numbers, returns the largest number in the list.
+
 function:
 =========
 name: maxInList

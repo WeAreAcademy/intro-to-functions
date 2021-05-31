@@ -1,3 +1,5 @@
+Write a function that, given two numbers, returns the smaller of the two numbers.
+
 function:
 =========
 name: min

@@ -1,3 +1,7 @@
+Write a function that, given a list of strings, returns the string which has the greatest character count (including duplicates).
+
+You may assume that each string in the list is a single word.
+
 function:
 =========
 name: longestInList

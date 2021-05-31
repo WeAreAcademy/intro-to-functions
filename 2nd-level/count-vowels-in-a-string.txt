@@ -1,4 +1,6 @@
-In the pseudocode for this example we've decomposed the problem, identifying and separating out a helping function isAVowel which has a clear, simpler task.
+Write a function that, given a string, returns the number of vowel occurrences in the string.
+
+Note: In the pseudocode for this example we've decomposed the problem, identifying and separating out a helping function isAVowel which has a clear, simpler task.
 
 function:
 =========
