@@ -1,0 +1,54 @@
+In the pseudocode for this example we've decomposed the problem, identifying and separating out a helping function isAVowel which has a clear, simpler task.
+
+function:
+=========
+name: countVowels
+
+parameter: inputString: string
+
+return type: number
+
+pseudo code:
+============
+set count to 0
+
+for each character in the string inputString
+	if isAVowel(character)
+		increment count by 1
+
+return count
+
+----------------------------------
+
+function:
+=========
+name: isAVowel
+
+parameter: character: string
+
+return type: boolean
+
+pseudo code:
+============
+if character is 'a' or 'e' or 'i' or 'o' or 'u'
+	return true
+else
+	return false
+
+----------------------------------
+
+test cases:
+===========
+countVowels("hello") should be 2
+countVowels("telephone") should be 4
+countVowels("rhythm") should be 0
+countVowels("aeiou") should be 5
+countVowels("aeiouu") should be 6
+countVowels("qaeiouxyz") should be 6
+
+isAVowel("a") should be true
+isAVowel("b") should be false
+isAVowel("c") should be false
+isAVowel("d") should be false
+isAVowel("e") should be true
+isAVowel("A") should be false [as a known and deliberate limitation of this solution]
