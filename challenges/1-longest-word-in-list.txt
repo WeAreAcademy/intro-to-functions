@@ -1,0 +1,21 @@
+function:
+=========
+name: longestInList
+
+parameter: words: list of strings
+
+return type: string
+
+pseudo code:
+============
+set longest to first string in words
+
+for each string word in words
+	if word has more characters than longest
+		set longest to word
+
+return longest
+
+test cases:
+===========
+(add some test cases yourself here!)
