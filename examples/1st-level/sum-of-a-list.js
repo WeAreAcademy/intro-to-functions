@@ -19,7 +19,7 @@ function sumList(numbers) {
 }
 
 // test cases
-console.log(sumList([3, 10, 1]), "should be 14");
-console.log(sumList([3, 10, 1, -4]), "should be 10");
-console.log(sumList([0, 0, 0, 1]), "should be 1");
-console.log(sumList([0, 0]), "should be 0");
+console.log("sumList([3, 10, 1]):", sumList([3, 10, 1]), "should be 14");
+console.log("sumList([3, 10, 1, -4]):", sumList([3, 10, 1, -4]), "should be 10");
+console.log("sumList([0, 0, 0, 1]):", sumList([0, 0, 0, 1]), "should be 1");
+console.log("sumList([0, 0]):", sumList([0, 0]), "should be 0");
