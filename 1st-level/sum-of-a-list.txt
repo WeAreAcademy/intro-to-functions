@@ -1,0 +1,23 @@
+function:
+=========
+name: sumList
+
+parameter: numbers: list of numbers
+
+return type: number
+
+pseudo code:
+============
+set runningTotal to 0
+
+for each number n in numbers
+	increment runningTotal by n
+
+return runningTotal
+
+test cases:
+===========
+sumList([3, 10, 1]) should be 14
+sumList([3, 10, 1, -4]) should be 10
+sumList([0, 0, 0, 1]) should be 1
+sumList([0, 0]) should be 0
