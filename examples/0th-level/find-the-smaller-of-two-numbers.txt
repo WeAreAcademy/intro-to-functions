@@ -4,15 +4,15 @@ function:
 =========
 name: min
 
-parameter a: number
-
-parameter b: number
+parameter
+	-	NUM_ONE: number
+	- NUM_TWO: number
 
 return: number
 
 pseudo code:
 ============
-if a is smaller than b
+if NUM_ONE is smaller than NUM_TWO
 	return a
 else
 	return b

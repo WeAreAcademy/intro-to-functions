@@ -4,18 +4,19 @@ function:
 =========
 name: sumList
 
-parameter: numbers: list of numbers
+parameters:
+	- NUMBERS: list of numbers
 
 return type: number
 
 pseudo code:
 ============
-set runningTotal to 0
+set RUNNING_TOTAL to 0
 
-for each number n in numbers
-	increment runningTotal by n
+for each number, N, in NUMBERS
+	increment RUNNING_TOTAL by N
 
-return runningTotal
+return RUNNING_TOTAL
 
 test cases:
 ===========

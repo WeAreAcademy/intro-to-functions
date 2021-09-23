@@ -1,37 +1,30 @@
 # function:
 # =========
 # name: countVowels
-# parameter: inputString: string
+# parameters:
+#   - inputString: string
 # return type: number
 
 def count_vowels(input_string):
-    # set count to 0
     count = 0
 
-    # for each character in the string inputString
     for character in input_string:
-        # if isAVowel(character)
         if is_a_vowel(character):
-            # increment count by 1
             count += 1 # or count = count + 1
 
-    # return count
     return count
 
 # function:
 # =========
 # name: isAVowel
-# parameter: character: string
+# parameters:
+#   - character: string
 # return type: boolean
 
 def is_a_vowel(character):
-    # if character is 'a' or 'e' or 'i' or 'o' or 'u'
     if character in ['a', 'e', 'i', 'o', 'u']:
-        # return true
         return True
-    # else
     else:
-        # return false
         return False
 
 # test cases

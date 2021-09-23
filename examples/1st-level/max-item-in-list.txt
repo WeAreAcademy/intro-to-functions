@@ -4,17 +4,18 @@ function:
 =========
 name: maxInList
 
-parameter: numbers: list of numbers
+parameters:
+	- NUMBERS: list of numbers
 
 return type: number
 
 pseudo code:
 ============
-set biggest to first number in list
-for each number n in list
-	if n is greater than biggest
-		set biggest to n
-return biggest
+set BIGGEST to first number in NUMBERS
+for each number, N, in NUMBERS
+	if N is greater than BIGGEST
+		set BIGGEST to n
+return BIGGEST
 
 test cases:
 ===========

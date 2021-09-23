@@ -1,19 +1,16 @@
 // function:
 // =========
 // name: min
-// parameter a: number
-// parameter b: number
+// parameters
+//  - numOne: number
+//  - numTwo: number
 // return: number
 
-function min(a, b) {
-  // if a is smaller than b
-  if (a < b) {
-    // return a
-    return a;
-    // else
+function min(numOne, numTwo) {
+  if (numOne < numTwo) {
+    return numOne;
   } else {
-    // return b
-    return b;
+    return numTwo;
   }
 }
 

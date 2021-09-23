@@ -1,20 +1,17 @@
 // function:
 // =========
 // name: sumList
-// parameter: numbers: list of numbers
+// parameters:
+//  - numbers: list of numbers
 // return type: number
 
 function sumList(numbers) {
-  // set runningTotal to 0
   let runningTotal = 0;
 
-  // for each number n in numbers
   for (let n of numbers) {
-    // increment runningTotal by n
     runningTotal += n; // or runningTotal = runningTotal + n;
   }
 
-  // return runningTotal
   return runningTotal;
 }
 

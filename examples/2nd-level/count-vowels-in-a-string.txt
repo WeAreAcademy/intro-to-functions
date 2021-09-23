@@ -6,19 +6,20 @@ function:
 =========
 name: countVowels
 
-parameter: inputString: string
+parameters:
+	- INPUT_STRING: string
 
 return type: number
 
 pseudo code:
 ============
-set count to 0
+set COUNT to 0
 
-for each character in the string inputString
-	if isAVowel(character)
-		increment count by 1
+for each character, CHAR, in the string INPUT_STRING
+	if isAVowel(CHAR)
+		increment COUNT by 1
 
-return count
+return COUNT
 
 ----------------------------------
 
@@ -26,13 +27,14 @@ function:
 =========
 name: isAVowel
 
-parameter: character: string
+parameters:
+	- CHARACTER: string
 
 return type: boolean
 
 pseudo code:
 ============
-if character is 'a' or 'e' or 'i' or 'o' or 'u'
+if CHARACTER is 'a' or 'e' or 'i' or 'o' or 'u'
 	return true
 else
 	return false

@@ -1,18 +1,16 @@
 # function:
 # =========
 # name: sumList
-# parameter: numbers: list of numbers
+# parameters:
+#   - numbers: list of numbers
 # return type: number
 
 def sum_list(numbers):
-    # set runningTotal to 0
     running_total = 0
-    # for each number n in numbers
+    
     for n in numbers:
-        # increment runningTotal by n
         running_total += n # or running_total = running_total + n
     
-    # return runningTotal
     return running_total
 
 # test cases

@@ -1,19 +1,16 @@
 # function:
 # =========
 # name: min
-# parameter a: number
-# parameter b: number
+# parameters
+#   - num_one: number
+#   - num_two: number
 # return: number
 
-def min(a, b):
-    # if a is smaller than b
-    if a < b:
-        # return a
-        return a
-    # else
+def min(num_one, num_two):
+    if num_one < num_two:
+        return num_one
     else:
-        # return b
-        return b
+        return num_two
         
 # test cases
 print("min(3, 5):", min(3, 5), "should be 3")

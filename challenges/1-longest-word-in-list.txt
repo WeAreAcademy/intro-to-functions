@@ -9,19 +9,20 @@ function:
 =========
 name: longestInList
 
-parameter: words: list of strings
+parameters:
+	- WORDS: list of strings
 
 return type: string
 
 pseudo code:
 ============
-set longest to first string in words
+set LONGEST to the 0th element in WORDS
 
-for each string word in words
-	if word has more characters than longest
-		set longest to word
+for each string, WORD, in WORDS
+	if WORD has more characters than LONGEST
+		set LONGEST to WORD
 
-return longest
+return LONGEST
 
 test cases:
 ===========

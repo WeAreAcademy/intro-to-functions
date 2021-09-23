@@ -6,15 +6,15 @@ function:
 =========
 name: isEqual
 
-parameter a: number
-
-parameter b: number
+parameters:
+	- NUM_ONE: number
+	- NUM_TWO: number
 
 return: boolean
 
-pseudo code:
+pseudocode:
 ============
-if a is equal to b
+if NUM_ONE is equal to NUM_TWO
 	return True
 else
 	return False

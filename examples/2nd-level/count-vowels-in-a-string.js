@@ -1,40 +1,33 @@
 // function:
 // =========
 // name: countVowels
-// parameter: inputString: string
+// parameters:
+//  - inputString: string
 // return type: number
 
 function countVowels(inputString) {
-  // set count to 0
   let count = 0;
 
-  // for each character in the string inputString
   for (let character of inputString) {
-    // if isAVowel(character)
     if (isAVowel(character)) {
-      // increment count by 1
       count += 1; // or count = count + 1, or count++ (in JS, not in Python)
     }
   }
 
-  // return count
   return count;
 }
 
 // function:
 // =========
 // name: isAVowel
-// parameter: character: string
+// parameters:
+//  - character: string
 // return type: boolean
 
 function isAVowel(character) {
-  // if character is 'a' or 'e' or 'i' or 'o' or 'u'
   if (["a", "e", "i", "o", "u"].includes(character)) {
-    // return true
     return true;
-    // else
   } else {
-    // return false
     return false;
   }
 }

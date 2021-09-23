@@ -1,21 +1,17 @@
 // function:
 // =========
 // name: maxInList
-// parameter: numbers: list of numbers
+// parameters:
+//    - numbers: list of numbers
 // return type: number
 
 function maxInList(numbers) {
-  // set biggest to first number in list
   let biggest = numbers[0];
-  // for each number n in list
   for (let n of numbers) {
-    // if n is greater than biggest
     if (n > biggest) {
-      // set biggest to n
       biggest = n;
     }
   }
-  // return biggest
   return biggest;
 }
 

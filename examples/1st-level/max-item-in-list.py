@@ -1,19 +1,15 @@
 # function:
 # =========
 # name: maxInList
-# parameter: numbers: list of numbers
+# parameters:
+#   - numbers: list of numbers
 # return type: number
 
 def max_in_list(numbers):
-    # set biggest to first number in list
     biggest = numbers[0]
-    # for each number n in list
     for n in numbers:
-        # if n is greater than biggest
         if n > biggest:
-            # set biggest to n
             biggest = n
-    # return biggest
     return biggest
 
 # test cases

@@ -9,27 +9,28 @@ function:
 =========
 name: censorMessage
 
-parameter: message: string
-parameter: banList: list of strings
+parameters:
+  - MESSAGE: string
+  - BAN_LIST: list of strings
 
 return type: string
 
 pseudo code:
 ============
-set rawWords to the list of strings created by separating the string message into sub-strings at every space (' ')
+set RAW_WORDS to the list of strings created by separating the string message into sub-strings at every space (' ')
 
-set scrubbedWords to an empty list
+set SCRUBBED_WORDS to an empty list
 
-for each string word in rawWords
-	set lowercaseWord to lowercase(word)
-  if lowercaseWord is contained in the list banList
-    insert the string '*****' at the end of scrubbedWords
+for each string, WORD, in RAW_WORDS
+	set LOWERCASE_WORD to lowercase(word)
+  if LOWERCASE_WORD is contained in the list BAN_LIST
+    insert the string '*****' at the end of SCRUBBED_WORDS
   else
-    insert word at the end of scrubbedWords
+    insert WORD at the end of SCRUBBED_WORDS
 
-set scrubbedMessage to the string created by joining together every string in scrubbedWords with a space (' ') as a join character
+set SCRUBBED_MESSAGE to the string created by joining together every string in SCRUBBED_WORDS with a space (' ') as a join character
 
-return scrubbedMessage
+return SCRUBBED_MESSAGE
 
 test cases:
 ===========
