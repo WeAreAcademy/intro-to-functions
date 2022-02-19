@@ -14,6 +14,6 @@ function censorMessage(string,banList){
     return scrubbedMessage
 }
 //TEST
-console.log("don't mess with cats")
-console.log("Are you sure that this is safe")
-console.log("I CANNOT HELP YOU")
+console.log(censorMessage("don't mess with cats",["mess"]))
+console.log(censorMessage("Are you sure that this is safe",["are","is"]))
+console.log(censorMessage("I CANNOT HELP YOU",["ARE","YOU"]))
