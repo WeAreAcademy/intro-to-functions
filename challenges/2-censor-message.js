@@ -13,3 +13,7 @@ function censorMessage(string,banList){
     let scrubbedMessage = scrubbedWords.join(" ")
     return scrubbedMessage
 }
+//TEST
+console.log("don't mess with cats")
+console.log("Are you sure that this is safe")
+console.log("I CANNOT HELP YOU")
