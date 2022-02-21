@@ -1,6 +1,12 @@
-{
+{ "name": "intro-to-function",
+  "version": "1.0.0",
+  "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
     "eslint": "^8.9.0",
     "prettier": "2.5.1"
+  },
+  "scripts":{
+    "format": "prettier --write challenges",
+    "lint": "eslint challenges"
   }
 }
