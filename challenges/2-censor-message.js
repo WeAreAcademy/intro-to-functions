@@ -1,5 +1,7 @@
+"use strict"
+
 function censorMessage(string,banList){
-    rawWords = string.split(" ")
+    let rawWords = string.split(" ")
     let scrubbedWords = []
 
     for(let word of rawWords){
