@@ -18,8 +18,19 @@ convert censoredOutput back to string
 return censoredOutputStr
 */
 
-function censoredMessage(list, censorList){
-    
+function censorMessage(string, censorList){
+    let stringasArray = string.split(" ")
+    let censoredOutput = []
+    for(let word in stringasArray){
+        if(stringasArray[word] in censorList){
+            censoredOutput.push("*****")
+            console.log(word)
+        }
+        else{censoredOutput.push(stringasArray[word])
+            console.log(stringasArray[word])}
+    }
+    censoredOutputStr = censoredOutput.toString()
+    return censoredOutputStr
 }
 
 
